@@ -36,18 +36,18 @@ judge_all.py
 ```
 This script determines the correctness of each answer, calculates the overall average accuracy for each model, and includes functions like judge_by_xx to read and evaluate the results from the jsonl file. It also allows for evaluating accuracy based on various dimensions such as knowledge points, educational stages, and question types.
 ### 3.2 Judge by Knowledge Points
-By running the following you can judge the model by Knowledge Points.
+To evaluate performance based on specific knowledge points, run:
 ```Shell
 python judge_by_knowledge.py
 ```
+
 ### 3.3 Judge by Educational Stages
-By running the following you can judge the model by Educational Stages.
+To evaluate performance across different educational stages, run:
 ```Shell
 python judge_by_stage.py
 ```
 ### 3.4 Judge by Question Types
-
-By running the following you can judge the model by Question Types.
+To evaluate performance based on question types, run:
 ```
 python judge_by_type.py
 ```
