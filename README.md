@@ -2,44 +2,50 @@
 This is the codebase for the paper MathScape: Evaluating MLLMs in multimodal Math Scenarios through a Hierarchical Benchmark.
 
 # Environments
-You can create conda environments by the following command:
+To set up the environment, use the following commands:
 ```Shell
-conda create -n MathScape python=3.10 
+conda create -n MathScape python=3.10
+conda activate MathScape
+```
+Then, install the required Python packages:
+```Shell
+pip install -r requirements.txt
 ```
 
 # MathScape Evaluation
 
-## 1. Evaluation for Multiple models
-You can change loading models in 
+## 1. Model Evaluation
+To evaluate multiple models, you can configure the models in the model.py file. This script is responsible for loading the models, processing the questions, and generating the results.
 ```Shell
 model.py
 ```
-This script handles the loading of various models, processes the questions, and outputs the results.
 
-## 2. Evaluate Models
+## 2. Running Evaluations
+To evaluate the models' performance, run:
 ```Shell
 eval.py
 ```
-This script compares the problem-solving process and the standard answers as references, evaluates the results output by the models, and writes the evaluation results into a `jsonl` file.
+This script compares the model-generated solutions against the standard answers, evaluates the results, and saves the evaluation data in a jsonl file.
 
-## 3. Judge Model Performances
-After Evaluating all the models and get the jsonl files, you can judge the model's performance.
+## 3. Assessing Model Performance
+Once all models have been evaluated and the jsonl files generated, you can assess the performance of each model.
 ### 3.1 Judge all the Performances
+To assess overall performance, run:
 ```Shell
 judge_all.py
 ```
-This script directly judges whether each question is answered correctly or not, calculates the overall average accuracy of each model, and includes functions like `judge_by_xx` to read the evaluation results from the `jsonl` file. It evaluates the accuracy of each model based on different dimensions such as knowledge points, stages, and question types.
-### 3.1 Judge by Knowledge Points
+This script determines the correctness of each answer, calculates the overall average accuracy for each model, and includes functions like judge_by_xx to read and evaluate the results from the jsonl file. It also allows for evaluating accuracy based on various dimensions such as knowledge points, educational stages, and question types.
+### 3.2 Judge by Knowledge Points
 By running the following you can judge the model by Knowledge Points.
 ```Shell
 python judge_by_knowledge.py
 ```
-### 3.2 Judge by Educational Stages
+### 3.3 Judge by Educational Stages
 By running the following you can judge the model by Educational Stages.
 ```Shell
 python judge_by_stage.py
 ```
-### 3.3 Judge by Question Types
+### 3.4 Judge by Question Types
 
 By running the following you can judge the model by Question Types.
 ```
