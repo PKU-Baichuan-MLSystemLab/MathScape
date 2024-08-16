@@ -12,6 +12,9 @@ Then, install the required Python packages:
 pip install -r requirements.txt
 ```
 
+# MathScape Datasets
+The MathScape dataset can be found in this link.
+
 # MathScape Evaluation
 
 ## 1. Model Evaluation
