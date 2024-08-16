@@ -1,0 +1,6 @@
+{
+    "gpt4-vision-preview": {"type": "openAI", "server": "xx.xxx.xxx.xxx:xx", "name": "gpt-4-vision-preview"},
+    "bc": {"type": "BCDocker", "server": "xxx", "do_sample": true},
+    "qwen-plus": {"type": "vllm", "server": "xx.xxx.xxx.xxx:xx", "name":"qwen-plus"}
+    
+}
