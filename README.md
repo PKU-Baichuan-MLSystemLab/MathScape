@@ -1,6 +1,13 @@
 # MathScape
 This is the codebase for the paper MathScape: Evaluating MLLMs in multimodal Math Scenarios through a Hierarchical Benchmark.
-# Description of Scripts
+
+# Environments
+You can create conda environments by the following command:
+```Shell
+conda create -n MathScape python=3.10 
+```
+
+# MathScape Evaluation
 
 ## 1. Evaluation for Multiple models
 You can change loading models in 
