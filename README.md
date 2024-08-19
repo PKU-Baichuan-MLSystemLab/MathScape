@@ -16,6 +16,9 @@ pip install -r requirements.txt
 
 The original dataset comprised 1,369 entries. After manually removing erroneous data, 1,325 entries remain. The images in these 1,325 entries have been renumbered sequentially from 1 to 1,325.
 
+- **math_data.json**  
+  All the math data is in JSON form.
+  
 - **math_question_solution_ans.json**  
   This file contains math questions along with their corresponding image IDs, detailed solution processes, and reference standard answers.
 
