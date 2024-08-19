@@ -12,8 +12,20 @@ Then, install the required Python packages:
 pip install -r requirements.txt
 ```
 
-# MathScape Datasets
-The MathScape dataset can be found in this link.
+# Data Description
+The original dataset contained 1,369 entries. After manually removing some erroneous data, 1,325 entries remain. The images in the 1,325 entries were renumbered from 1 to 1,325.
+```Shell
+math_question_solution_ans.json
+```
+contains math questions, the corresponding image IDs, the solution process, and the reference standard answers.
+```Shell
+math_with_class.jsonl: 
+```
+This file breaks down each question into multiple sub-questions (for example, one question may contain 2-3 sub-questions). It includes the type labels for each sub-question, the knowledge point labels, the solution process for each sub-question, and the reference standard answers for each sub-question.
+```Shell
+question_knowledge.json
+```
+This file contains the image ID for each question and the corresponding knowledge point classification.
 
 # MathScape Evaluation
 
