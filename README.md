@@ -28,6 +28,8 @@ The original dataset comprised 1,369 entries. After manually removing erroneous 
 - **question_knowledge.json**  
   This file maps the image IDs of the questions to their corresponding knowledge point classifications.
 
+  You can download the dataset from [this link](https://drive.google.com/file/d/1Y3cnKPyryM0_m5QJQIOkF09KjDO9Q_QH/view?usp=sharing)
+
 # MathScape Evaluation
 
 ## 1. Model Evaluation
