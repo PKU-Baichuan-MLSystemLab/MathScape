@@ -1,5 +1,7 @@
 # MathScape
-This is the codebase for the paper MathScape: Evaluating MLLMs in multimodal Math Scenarios through a Hierarchical Benchmark.
+This is the codebase for the paper MathScape: Benchmarking Multimodal Large Language Models in Real-World Mathematical Contexts. Our Supplementary Material is avaliable at [MathScape Supplementary Material](https://github.com/PKU-Baichuan-MLSystemLab/MathScape/blob/main/Supplementary_file/MathScape_MM_Dataset_Appendix.pdf)
+
+
 
 # Environments
 To set up the environment, use the following commands:
